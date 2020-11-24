@@ -63,7 +63,7 @@ home = (val) => {
           <div className="male">
             <Male mostrar={this.mostrar}/>
           </div>
-          {this.state.Female ? null : <Pokedex false={this.state.Male=false}/>}
+          {this.state.Female ? null : <Pokedex />}
           {this.state.Male ?  null : <Pokedex />}
           {this.state.Home ? <Stadio /> : null}
         <Jumbotron className="footer" bg="dark" variant="dark">
