@@ -4,8 +4,6 @@ import { InputGroup, FormControl } from "react-bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import StadioBg from "../../imgs/stadio.png";
 
-import Male from "../../imgs/male.png";
-
 export default class Stadio extends React.Component {
   render() {
     return (
