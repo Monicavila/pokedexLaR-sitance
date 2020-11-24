@@ -1,0 +1,35 @@
+.pokedex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    row-gap: 5%;
+  }
+  
+  .card-container {
+    padding: 0em 1em;
+    border-radius: 4px;
+    border: solid 1px #000;
+  }
+  
+  .card-container img {
+    display: block;
+    width: 100%;
+  }
+  
+  .pagination-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+  }
+  
+  .pagination-row > .item {
+    flex-basis: 8%;
+    text-align: center;
+    background-color: #82b0ec;
+    cursor: pointer;
+  }
+  
+  .pagination-row > .item:hover {
+    background-color: #c2c2c2;
+  }
+  
