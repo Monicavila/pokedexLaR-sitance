@@ -24,10 +24,19 @@
 }
 .name {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 20%;
   margin-top: 60px;
   margin-left: 40%;
 }
+.stadio-badge {
+  font-size: 1em;
+  padding-top: 10px;
+  border-radius: 5px 0 0 5px;
+}
+
 .start img {
   width: 100%;
 }
@@ -61,7 +70,7 @@
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.start-txt p {
+.start-txt span {
   color: rgb(244, 247, 239);
   font-family: "Press Start 2P";
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;

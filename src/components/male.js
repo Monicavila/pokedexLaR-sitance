@@ -8,7 +8,7 @@ export default class Female extends React.Component {
         <img
           alt="male"
           src={maleImg}
-          onClick={() => this.props.mostrar("1")}
+          onClick={() => this.props.verify("1")}
         ></img>
       </div>
     );
