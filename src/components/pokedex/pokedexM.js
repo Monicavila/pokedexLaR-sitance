@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./styles.css";
 
 import display from "../../imgs/pokédexNAME.png";
+import red from "../../imgs/Red.png"
 
 export default class PokedexM extends React.Component {
   constructor() {
@@ -80,7 +81,10 @@ export default class PokedexM extends React.Component {
   render() {
     return (
       <div className="pokedex-bgM">
-        <div className="pokedex-display">
+        <div className="red">
+          <img src={red} alt="Red" />
+        </div>
+        <div className="pokedexM-display">
           <img src={display} alt="display"></img>
           <h4 className="pokedex-name">{this.props.trainer}</h4>
           <div className="pokedex-container">
@@ -100,7 +104,6 @@ export default class PokedexM extends React.Component {
             })}
           </div>
           <div>
-            <p>Pages</p>
             <br />
             <Pagination fetchPageFn={this.fetchPage} />
           </div>

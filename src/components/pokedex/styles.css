@@ -15,7 +15,16 @@
 .pokedex-display {
   width: 650px;
   padding: 20px;
-  margin-left: 150px;
+  margin-left: 120px;
+}
+.pokedexM-display {
+  width: 650px;
+  padding: 20px;
+  margin-left: 950px;
+}
+.red {
+  position: absolute;
+  margin-left: 50px;
 }
 .pokedex-name {
   position: absolute;

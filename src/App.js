@@ -20,7 +20,6 @@ export default class App extends React.Component {
       Male: true,
       Home: true,
       name: "",
-      save: false,
     };
   }
 
@@ -52,6 +51,10 @@ export default class App extends React.Component {
     this.setState({ name: trainer });
   };
 
+  deleteInput = () => {
+    this.setState({ name: "" });
+  };
+
   render() {
     return (
       <div>
@@ -66,7 +69,7 @@ export default class App extends React.Component {
                 className="d-inline-block align-top"
               />{" "}
               <p>WELCOME TO YOUR POKÉMON POKEDEX</p>
-              <Button className="home-Btn" variant="light" onClick={this.home}>
+              <Button className="home-Btn" variant="light" onClick={(event) => {this.deleteInput(event);this.home(event)}}>
                 HOME
               </Button>
             </Navbar.Brand>
@@ -93,7 +96,6 @@ export default class App extends React.Component {
             <Stadio
               name={this.handleInput}
               trainer={this.state.name}
-              verify={this.save}
             />
           ) : null}
           <Jumbotron className="footer" bg="dark" variant="dark">

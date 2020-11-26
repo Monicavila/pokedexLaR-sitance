@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./styles.css";
 
 import display from "../../imgs/pokédexNAME.png";
+import leaf from "../../imgs/Leaf.png";
 
 export default class PokedexF extends React.Component {
   constructor() {
@@ -91,19 +92,21 @@ export default class PokedexF extends React.Component {
               let pokemonNum = this.getNumber(index);
               return (
                 <Card
-                key={index + 1}
-                id={pokemonNum}
-                name={pokemon.name}
-                img={pokemonImg}
+                  key={index + 1}
+                  id={pokemonNum}
+                  name={pokemon.name}
+                  img={pokemonImg}
                 />
               );
             })}
           </div>
           <div>
-            <p>Pages</p>
             <br />
             <Pagination fetchPageFn={this.fetchPage} />
           </div>
+        </div>
+        <div>
+          <img src={leaf} alt="Leaf"/>
         </div>
       </div>
     );
