@@ -1,12 +1,12 @@
 .pokedex-bg {
-  background-image: url(../../imgs/woods.jpg);
+  background-image: url(../../imgs/sea.jpg);
   background-size: cover;
   display: flex;
   flex-direction: row;
 }
 
 .pokedex-bgM {
-  background-image: url(../../imgs/sea.jpg);
+  background-image: url(../../imgs/woods.jpg);
   background-size: cover;
   display: flex;
   flex-direction: row;
@@ -31,7 +31,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 10px;
-  row-gap: 5px;
+  row-gap: 10px;
   margin-left: 85px;
   margin-top: -752px
 }
