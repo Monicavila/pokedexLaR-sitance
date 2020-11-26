@@ -49,12 +49,12 @@
   margin: 0;
 }
 
-.card-container>img {
+.card-container>img { /*aquí agregue esta flecha para que no choque con las otras imágenes*/
   display: block;
   width: 100%;
   background-color: #dadad7;
   border-radius: 10px;
-  cursor: pointer;
+  cursor: pointer; /*agregue este cursor*/
 }
 
 .pagination-row {
