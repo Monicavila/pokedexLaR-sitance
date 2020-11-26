@@ -1,0 +1,19 @@
+.modal-pokemon {
+    background-color: white;
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 10%; /*posiciona el modal desde arriba*/
+    left: 55%; /*posiciona el modal desde el lado izquierdo*/
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.modal-pokemon>img {
+    width: 10%; /*modifica el tamaño de la imagen en el modal los width y el height*/
+    height: 20%;
+}

@@ -49,11 +49,12 @@
   margin: 0;
 }
 
-.card-container img {
+.card-container>img {
   display: block;
   width: 100%;
   background-color: #dadad7;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .pagination-row {
