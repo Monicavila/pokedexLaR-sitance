@@ -22,7 +22,6 @@ export default class Stadio extends React.Component {
                 </Badge>{" "}
               </InputGroup.Append>
               <FormControl
-                placeholder="Recipient's username"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
                 placeholder="Enter the trainer name"
