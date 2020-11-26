@@ -45,6 +45,7 @@
 .card-container p {
   text-transform: capitalize;
   font-weight: bold;
+  font-size: 12.7px;
   margin: 0;
 }
 

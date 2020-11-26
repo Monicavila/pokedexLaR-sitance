@@ -70,7 +70,7 @@
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.start-txt span {
+.start-txt {
   color: rgb(244, 247, 239);
   font-family: "Press Start 2P";
   -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
