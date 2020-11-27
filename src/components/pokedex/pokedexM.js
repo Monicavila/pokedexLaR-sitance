@@ -105,7 +105,7 @@ export default class PokedexM extends React.Component {
           </div>
           <div>
             <br />
-            <Pagination fetchPageFn={this.fetchPage} />
+            <Pagination urrentPage={this.state.currentPage} fetchPageFn={this.fetchPage} />
           </div>
         </div>
       </div>
