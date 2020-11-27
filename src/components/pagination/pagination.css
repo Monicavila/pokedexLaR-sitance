@@ -14,8 +14,19 @@
     /* top:0;
     right: 0; */
     justify-content: space-between;
-    
-    
+}
+.buttomContainerMale{
+    display: flex;
+    width: 250px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    position: absolute;
+    top:89%;
+    left: 68.5%;
+    font-family: "Press Start 2P";
+    /* top:0;
+    right: 0; */
+    justify-content: space-between;
 }
 .buttomCard{
     
