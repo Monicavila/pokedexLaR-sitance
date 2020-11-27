@@ -5,7 +5,7 @@ function selectPage(currentPage){
     //arrayPagination=Array.apply(null, Array(10)).map(() => {return 1});
     let arrayPagination=[]
     if(currentPage>5){
-        for(let i=currentPage-5;i<=currentPage+5;i++){
+        for(let i=currentPage-4;i<=currentPage+5;i++){
             arrayPagination.push(i)
         }
        
@@ -26,9 +26,13 @@ export default function Pagintation(props){
     return(
         <div className="buttomContainer">
             {
+                
                 pages.map((element,index)=>{
+                    let  classtype="";
+                    props.currentPage!=element?classtype="buttomCard":classtype="selectedCard"
+                   
                 return(
-                    <div className="buttomCard" onClick={() => props.fetchPageFn(element)}>
+                    <div className={classtype} onClick={() => props.fetchPageFn(element)}>
                     {element}
                 </div>
                     ) 
