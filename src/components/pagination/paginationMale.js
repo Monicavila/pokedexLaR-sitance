@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './pagination.css'
 
 function selectPage(currentPage){
@@ -21,7 +21,6 @@ function selectPage(currentPage){
 export default function Pagintation(props){
     
     const pages=(selectPage(props.currentPage));
-    const styleCard="selectedCard";
     
     return(
         <div className="buttomContainerMale">
@@ -29,7 +28,7 @@ export default function Pagintation(props){
                 
                 pages.map((element,index)=>{
                     let  classtype="";
-                    props.currentPage!=element?classtype="buttomCard":classtype="selectedCard"
+                    props.currentPage!==element?classtype="buttomCard":classtype="selectedCard"
                    
                 return(
                     <div className={classtype} onClick={() => props.fetchPageFn(element)}>
