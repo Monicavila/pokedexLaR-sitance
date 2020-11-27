@@ -51,6 +51,11 @@
   text-align: left;
   background-color: whitesmoke;
 }
+.card-container:hover {
+  cursor: pointer;
+  background-color: rgb(183, 243, 248);
+}
+
 .card-container p {
   text-transform: capitalize;
   font-weight: bold;
@@ -58,11 +63,16 @@
   margin: 0;
 }
 
-.card-container img {
+.card-container > img {
   display: block;
   width: 100%;
   background-color: #dadad7;
   border-radius: 10px;
+}
+
+.card-container > img:hover {
+  background-color: rgba(183, 243, 248, 0.854);
+  filter: saturate(250%);
 }
 
 .pagination-row {

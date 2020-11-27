@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../card";
-import Pagination from "../pagination";
+import Pagination from "../pagination/pagination";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./styles.css";
@@ -102,7 +102,7 @@ export default class PokedexF extends React.Component {
           </div>
           <div>
             <br />
-            <Pagination fetchPageFn={this.fetchPage} />
+            <Pagination currentPage={this.state.currentPage} fetchPageFn={this.fetchPage} />
           </div>
         </div>
         <div>

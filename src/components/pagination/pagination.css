@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.buttomContainer{
+    display: flex;
+    width: 250px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    position: absolute;
+    top:89%;
+    right: 65.5%;
+    font-family: "Press Start 2P";
+    /* top:0;
+    right: 0; */
+    justify-content: space-between;
+    
+    
+}
+.buttomCard{
+    
+    padding: 6px;
+    color:black;
+    background-color: rgba(128, 128, 128, 0.397);
+    width:15%;
+    text-align: center;
+    font-weight: bolder;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+.selectedCard{
+    
+    padding: 6px;
+    color:black;
+    background-color: rgba(167, 5, 5, 0.555);
+    width:15%;
+    text-align: center;
+    font-weight: bolder;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.buttomCard:hover{
+    background-color: rgba(255, 10, 10, 0.555);
+    color:black;
+    cursor: pointer;
+}
