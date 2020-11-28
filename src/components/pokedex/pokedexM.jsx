@@ -1,13 +1,15 @@
 import React from "react";
 import Card from "../card";
-import Pagination from "../pagination";
+import Pagination from "../pagination/paginationMale";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./styles.css";
 
 import display from "../../imgs/pokédexNAME.png";
+import red from "../../imgs/Red.png"
+import Arrows from "../pagination/arrows.jsx";
 
-export default class PokedexF extends React.Component {
+export default class PokedexM extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -79,8 +81,11 @@ export default class PokedexF extends React.Component {
 
   render() {
     return (
-      <div className="pokedex-bg">
-        <div className="pokedex-display">
+      <div className="pokedex-bgM">
+        <div className="red">
+          <img src={red} alt="Red" />
+        </div>
+        <div className="pokedexM-display">
           <img src={display} alt="display"></img>
           <h4 className="pokedex-name">{this.props.trainer}</h4>
           <div className="pokedex-container">
@@ -91,18 +96,22 @@ export default class PokedexF extends React.Component {
               let pokemonNum = this.getNumber(index);
               return (
                 <Card
-                key={index + 1}
-                id={pokemonNum}
-                name={pokemon.name}
-                img={pokemonImg}
+                  key={index + 1}
+                  id={pokemonNum}
+                  name={pokemon.name}
+                  img={pokemonImg}
                 />
               );
             })}
           </div>
-          <div>
-            <p>Pages</p>
-            <br />
-            <Pagination fetchPageFn={this.fetchPage} />
+          <div className="positionPaginationM">
+            <Arrows fn={this.fetchPage} currentPage={this.state.currentPage}>
+              {" "}
+            </Arrows>
+            <Pagination
+              currentPage={this.state.currentPage}
+              fetchPageFn={this.fetchPage}
+            />
           </div>
         </div>
       </div>

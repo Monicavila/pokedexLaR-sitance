@@ -1,9 +1,8 @@
-import React, { useState} from 'react';
-import Modal from './modal/modal.jsx';
+import React, {useState} from "react";
+import Modal from "./modal/modal.jsx"
 
 function Card(props){
     const [show, setShow] = useState(false);
-
     return (
         <div className="card-container">
             <p>{props.id} {props.name}</p>

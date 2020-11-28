@@ -11,7 +11,7 @@ export default class Stadio extends React.Component {
         <div className="start">
           <div className="press-start">
             <p className="start-txt">
-              <span>PICK A TRAINER</span>
+              <span>CHOOSE A TRAINER</span>
             </p>
           </div>
           <div className="name">

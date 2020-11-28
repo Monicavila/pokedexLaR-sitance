@@ -15,7 +15,21 @@
 .pokedex-display {
   width: 650px;
   padding: 20px;
-  margin-left: 150px;
+  margin-left: 120px;
+}
+.pokedexM-display {
+  width: 650px;
+  padding: 20px;
+  margin-left: 950px;
+  margin-bottom: 45px;
+}
+.leaf {
+  margin-top: -880px;
+  margin-left: 900px;
+}
+.red {
+  position: absolute;
+  margin-left: 50px;
 }
 .pokedex-name {
   position: absolute;
@@ -42,6 +56,11 @@
   text-align: left;
   background-color: whitesmoke;
 }
+.card-container:hover {
+  cursor: pointer;
+  background-color: rgb(183, 243, 248);
+}
+
 .card-container p {
   text-transform: capitalize;
   font-weight: bold;
@@ -49,7 +68,7 @@
   margin: 0;
 }
 
-.card-container>img { /*aquí agregue esta flecha para que no choque con las otras imágenes*/
+.card-container > img {
   display: block;
   width: 100%;
   background-color: #dadad7;
@@ -57,23 +76,16 @@
   cursor: pointer; /*agregue este cursor*/
 }
 
-.pagination-row {
-  display: flex;
-  flex-direction: row;
-  width: 250px;
-  font-family: "Press Start 2P";
-  font-weight: lighter;
-  font-size: larger;
-  margin-top: -160px;
-  margin-left: 210px;
+.card-container > img:hover {
+  background-color: rgba(183, 243, 248, 0.854);
+  filter: saturate(250%);
 }
 
-.pagination-row > .item {
-  flex-basis: 8%;
-  text-align: center;
-  cursor: pointer;
+.positionPagination {
+  margin-top: -35%;
+  margin-left: 35%;
 }
-
-.pagination-row > .item:hover {
-  background-color: #c2c2c2;
+.positionPaginationM {
+  margin-top: -34%;
+  margin-left: 35%;
 }
