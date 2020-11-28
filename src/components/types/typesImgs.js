@@ -21,92 +21,110 @@ const typesImg = [
     {
         url: water,
         name: "water",
-        backgroundColor:{backgroundColor: "rgb(88, 154, 212)"}
+        backgroundColor:{backgroundColor: "rgb(88, 154, 212)"},
+        size: {width: "60px", height: "60px"}
     },
     {
         url: bug,
         name: "bug",
-        backgroundColor:{backgroundColor: "rgb(140, 206, 0)"} 
+        backgroundColor:{backgroundColor: "rgb(140, 206, 0)"},
+        size: {width: "60px", height: "60px"} 
     },
     {
         url: dark,
         name: "dark",
-        backgroundColor:{backgroundColor: "rgb(82, 82, 99)"}  
+        backgroundColor:{backgroundColor: "rgb(82, 82, 99)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: dragon,
         name: "dragon",
-        backgroundColor:{backgroundColor: "rgb(28,110, 184)"}
+        backgroundColor:{backgroundColor: "rgb(28,110, 184)"},
+        size: {width: "60px", height: "60px"}
     },
     {
         url: electric,
         name: "electric",
-        backgroundColor:{backgroundColor: "rgb(253, 212, 72)"}
+        backgroundColor:{backgroundColor: "rgb(253, 212, 72)"},
+        size: {width: "60px", height: "60px"}
     },
     {
         url: fairy,
         name: "fairy",
-        backgroundColor:{backgroundColor: "rgb(242, 143, 217)"  }  
+        backgroundColor:{backgroundColor: "rgb(242, 143, 217)"},
+        size: {width: "60px", height: "60px"} 
     },
     {
         url: fight,
         name: "fight",
-        backgroundColor:{backgroundColor: "rgb(217, 85, 102)"   } 
+        backgroundColor:{backgroundColor: "rgb(217, 85, 102)"},
+        size: {width: "60px", height: "60px"}
     },
     {
         url: fire,
         name: "fire",
-        backgroundColor:{backgroundColor: "rgb(255, 165, 33)"   } 
+        backgroundColor:{backgroundColor: "rgb(255, 165, 33)"},
+        size: {width: "60px", height: "60px"}
     },
     {
         url: flying,
         name: "flying",
-        backgroundColor:{backgroundColor: "rgb(105, 130, 212)"  }  
+        backgroundColor:{backgroundColor: "rgb(105, 130, 212)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: ghost,
         name: "ghost",
-        backgroundColor:{backgroundColor: "rgb(134, 125, 208)"  }  
+        backgroundColor:{backgroundColor: "rgb(134, 125, 208)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: grass,
         name: "grass",
-        backgroundColor: {backgroundColor:"rgb(42, 157, 58)"}  
+        backgroundColor: {backgroundColor:"rgb(42, 157, 58)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: ground,
         name: "ground",
-        backgroundColor:{backgroundColor: "rgb(208,125,68)"  }    
+        backgroundColor:{backgroundColor: "rgb(208,125,68)"},
+        size: {width: "60px", height: "60px"}    
     },
     {
         url: ice,
         name: "ice",
-        backgroundColor:{backgroundColor: "rgb(123, 222, 222)"  }  
+        backgroundColor:{backgroundColor: "rgb(123, 222, 222)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: normal,
         name: "normal",
-        backgroundColor:{backgroundColor: "rgb(145, 145, 145)"  }  
+        backgroundColor:{backgroundColor: "rgb(145, 145, 145)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: poison,
         name: "poison",
-        backgroundColor: {backgroundColor:"rgb(215,75,198)"  }
+        backgroundColor: {backgroundColor:"rgb(215,75,198)"},
+        size: {width: "60px", height: "60px"}
     },
     {
         url: psychic,
         name: "psychic",
-        backgroundColor:{backgroundColor: "rgb(255, 140, 123)"  }  
+        backgroundColor:{backgroundColor: "rgb(255, 140, 123)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: rock,
         name: "rock",
-        backgroundColor:{backgroundColor: "rgb(203, 194, 104)"  }  
+        backgroundColor:{backgroundColor: "rgb(203, 194, 104)"},
+        size: {width: "60px", height: "60px"}  
     },
     {
         url: steel,
         name: "steel",
-        backgroundColor:{backgroundColor: "rgb(44, 143, 151)"   } 
+        backgroundColor:{backgroundColor: "rgb(44, 143, 151)"},
+        size: {width: "60px", height: "60px"} 
     },
 
 ]
