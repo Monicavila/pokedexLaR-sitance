@@ -6,7 +6,7 @@ import electric from "./typesIcons/Badge_Type_Electric_01.png"
 import fairy from "./typesIcons/Badge_Type_Fairy_01.png"
 import fight from "./typesIcons/Badge_Type_Fight_01.png"
 import fire from "./typesIcons/Badge_Type_Fire_01.png"
-import flaying from "./typesIcons/Badge_Type_Flying_01.png"
+import flying from "./typesIcons/Badge_Type_Flying_01.png"
 import ghost from "./typesIcons/Badge_Type_Ghost_01.png"
 import grass from "./typesIcons/Badge_Type_Grass_01.png"
 import ground from "./typesIcons/Badge_Type_Ground_01.png"
@@ -20,75 +20,93 @@ import steel from "./typesIcons/Badge_Type_Steel_01.png"
 const typesImg = [
     {
         url: water,
-        name: "water"
+        name: "water",
+        backgroundColor:{backgroundColor: "rgb(88, 154, 212)"}
     },
     {
         url: bug,
-        name: "bug"
+        name: "bug",
+        backgroundColor:{backgroundColor: "rgb(140, 206, 0)"} 
     },
     {
         url: dark,
-        name: "dark"
+        name: "dark",
+        backgroundColor:{backgroundColor: "rgb(82, 82, 99)"}  
     },
     {
         url: dragon,
-        name: "dragon"
+        name: "dragon",
+        backgroundColor:{backgroundColor: "rgb(28,110, 184)"}
     },
     {
         url: electric,
-        name: "electric"
+        name: "electric",
+        backgroundColor:{backgroundColor: "rgb(253, 212, 72)"}
     },
     {
         url: fairy,
-        name: "fairy"
+        name: "fairy",
+        backgroundColor:{backgroundColor: "rgb(242, 143, 217)"  }  
     },
     {
         url: fight,
-        name: "fight"
+        name: "fight",
+        backgroundColor:{backgroundColor: "rgb(217, 85, 102)"   } 
     },
     {
         url: fire,
-        name: "fire"
+        name: "fire",
+        backgroundColor:{backgroundColor: "rgb(255, 165, 33)"   } 
     },
     {
-        url: flaying,
-        name: "flating"
+        url: flying,
+        name: "flying",
+        backgroundColor:{backgroundColor: "rgb(105, 130, 212)"  }  
     },
     {
         url: ghost,
-        name: "ghost"
+        name: "ghost",
+        backgroundColor:{backgroundColor: "rgb(134, 125, 208)"  }  
     },
     {
         url: grass,
-        name: "grass"
+        name: "grass",
+        backgroundColor: {backgroundColor:"rgb(42, 157, 58)"}  
     },
     {
         url: ground,
-        name: "ground"
+        name: "ground",
+        backgroundColor:{backgroundColor: "rgb(208,125,68)"  }    
     },
     {
         url: ice,
-        name: "ice"
+        name: "ice",
+        backgroundColor:{backgroundColor: "rgb(123, 222, 222)"  }  
     },
     {
         url: normal,
-        name: "normal"
+        name: "normal",
+        backgroundColor:{backgroundColor: "rgb(145, 145, 145)"  }  
     },
     {
         url: poison,
-        name: "poison"
+        name: "poison",
+        backgroundColor: {backgroundColor:"rgb(215,75,198)"  }
     },
     {
         url: psychic,
-        name: "psychic"
+        name: "psychic",
+        backgroundColor:{backgroundColor: "rgb(255, 140, 123)"  }  
     },
     {
         url: rock,
-        name: "rock"
+        name: "rock",
+        backgroundColor:{backgroundColor: "rgb(203, 194, 104)"  }  
     },
     {
         url: steel,
-        name: "steel"
+        name: "steel",
+        backgroundColor:{backgroundColor: "rgb(44, 143, 151)"   } 
     },
 
 ]

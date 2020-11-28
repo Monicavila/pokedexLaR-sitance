@@ -43,11 +43,12 @@ const Modal = (props) => {
             <div>
               <img className="icon" src={icon.url} alt={type.type.name} />
               <p>{type.type.name}</p>
+              <p style={icon.backgroundColor}></p>
             </div>
           );
         })}
       </div>
-      <div className="c3">
+      <div className="c2">
         {/*arreglo de los stats del pokemon*/}
         <h4>Stats: </h4>
         {pokemon.stats.map((stat) => {
