@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./modal.css";
-import typesImg from "../../components/types/typesImgs";
+import typesImg from "../types/typesImgs";
 
 function findIcon(type) {
   let iconFind = typesImg.find((icon) => icon.name === type);
   return iconFind;
 }
 
-const Modal = (props) => {
+const ModalM = (props) => {
   let [pokemon, setPokemon] = useState({ stats: [], types: [] });
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Modal = (props) => {
   }
 
   return (
-    <div className="modal-pokemon">
+    <div className="modal-pokemonM">
       <div className="c1">
         <div className="data">
           <div className="data-name">
@@ -76,4 +76,4 @@ const Modal = (props) => {
   );
 };
 
-export default Modal;
+export default ModalM;

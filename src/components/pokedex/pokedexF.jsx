@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../card";
+import Card from "../cardFem";
 import Pagination from "../pagination/paginationFem.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";

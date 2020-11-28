@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Modal from "./modal/modal.jsx"
+import Modal from "./modal/modalFem.jsx"
 
 function Card(props){
     const [show, setShow] = useState(false);
