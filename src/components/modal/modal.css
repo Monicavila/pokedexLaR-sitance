@@ -13,7 +13,15 @@
     padding: 10px;
 }
 
-.modal-pokemon>img {
+.modal-pokemon>.c2>img {
     width: 10%; /*modifica el tamaño de la imagen en el modal los width y el height*/
     height: 20%;
+}
+.modal-pokemon>.c1 {
+    width: 10%;
+    height: 20%;
+}
+.modal-pokemon>.c1 {
+    display: flex;
+  flex-direction: row;
 }
