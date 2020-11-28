@@ -1,9 +1,9 @@
 .modal-pokemon {
     background-color: white;
-    width: 35%;
-    height: 65vh;
+    width: auto;
+    height: auto;
     position: fixed;
-    top: 10%; /*posiciona el modal desde arriba*/
+    top: 37%; /*posiciona el modal desde arriba*/
     left: 55%; /*posiciona el modal desde el lado izquierdo*/
     color: black;
     display: flex;
