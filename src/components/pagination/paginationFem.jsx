@@ -26,7 +26,7 @@ export default function Pagintation(props){
         <div className="buttomContainer">
             {
                 
-                pages.map((element,index)=>{
+                pages.map((element)=>{
                     let  classtype="";
                     props.currentPage!==element?classtype="buttomCard":classtype="selectedCard"
                    

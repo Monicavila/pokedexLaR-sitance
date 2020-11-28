@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "../card";
-import Pagination from "../pagination/paginationFem";
+import Pagination from "../pagination/paginationFem.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./styles.css";
 
 import display from "../../imgs/pokédexNAME.png";
 import leaf from "../../imgs/Leaf.png";
+import Arrows from "../pagination/arrows.jsx";
 
 export default class PokedexF extends React.Component {
   constructor() {
@@ -34,15 +35,17 @@ export default class PokedexF extends React.Component {
   fetchPage = (requestPage) => {
     // 1. Completar el método para poder obtener los pokemones dependiendo de la
     // actualizar el estado con la página solicitada
-    this.setState({ currentPage: requestPage });
-    const limit = this.state.pokemonPerPage;
-    const url = "https://pokeapi.co/api/v2/pokemon";
-    fetch(`${url}?limit=${limit}&offset=${(requestPage - 1) * 9}`)
-      .then((response) => response.json())
-      .then((data) => this.setState({ pokemones: data.results }))
-      .catch((error) => {
-        console.log(error);
-      });
+    if (requestPage > 0) {
+      this.setState({ currentPage: requestPage });
+      const limit = this.state.pokemonPerPage;
+      const url = "https://pokeapi.co/api/v2/pokemon";
+      fetch(`${url}?limit=${limit}&offset=${(requestPage - 1) * 9}`)
+        .then((response) => response.json())
+        .then((data) => this.setState({ pokemones: data.results }))
+        .catch((error) => {
+          console.log(error);
+        });
+    }
   };
 
   getImage = (index) => {
@@ -100,13 +103,18 @@ export default class PokedexF extends React.Component {
               );
             })}
           </div>
-          <div>
-            <br />
-            <Pagination currentPage={this.state.currentPage} fetchPageFn={this.fetchPage} />
+          <div className="positionPagination">
+            <Arrows fn={this.fetchPage} currentPage={this.state.currentPage}>
+              {" "}
+            </Arrows>
+            <Pagination
+              currentPage={this.state.currentPage}
+              fetchPageFn={this.fetchPage}
+            />
           </div>
         </div>
-        <div>
-          <img src={leaf} alt="Leaf"/>
+        <div className="leaf">
+          <img src={leaf} alt="Leaf" />
         </div>
       </div>
     );

@@ -6,7 +6,7 @@ import Pokeball from "./imgs/pokeball.png";
 import swal from "sweetalert";
 import "./App.css";
 
-import PokedexF from "./components/pokedex/pokedexF";
+import PokedexF from "./components/pokedex/pokedexF.jsx";
 import PokedexM from "./components/pokedex/pokedexM";
 import Stadio from "./components/stadio/stadio";
 import Female from "./components/female";

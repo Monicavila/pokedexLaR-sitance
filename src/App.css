@@ -57,11 +57,11 @@
   cursor: pointer;
   filter: saturate(180%);
 }
-.press-start{
+.press-start {
   position: absolute;
   text-align: center;
   font-size: 1.5em;
-  margin: 270px 0 0 685px;
+  margin: 270px 0 0 650px;
 }
 .press-start p {
   text-decoration: none;
