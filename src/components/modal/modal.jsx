@@ -35,19 +35,20 @@ const Modal = (props) => {
             <p>{props.name}</p>{" "}
           </div>
           <div className="type">
-            {/* arreglo del tipo del pokemon */}
+            {/*arreglo del tipo del pokemon*/}
             <h4>Type: </h4>
-            {pokemon.types.map((type) => {
+            <div className="type-name">
+              {pokemon.types.map((type) => {
               let icon = findIcon(type.type.name);
               return (
-                  <div className="type-name">
-                    <div className="type-name-img">
-                      <img className="icon" src={icon.url} alt={type.type.name} style={icon.size}/>
-                    </div>                    
+                  <div className="type-image">                    
+                    <img className="icon" src={icon.url} alt={type.type.name} style={icon.size}/>                                        
                     <p style={icon.backgroundColor}>{type.type.name}</p>
                   </div>
                 );
               })}
+            </div>
+            
           </div>
         </div> 
         <div className="poke-image">
@@ -56,7 +57,7 @@ const Modal = (props) => {
       </div>
       
       <div className="c2">
-        {/* arreglo de los stats del pokemon */}
+        {/*arreglo de los stats del pokemon*/}
         <h4>Stats: </h4>
         {pokemon.stats.map((stat) => {
           return (
@@ -69,7 +70,7 @@ const Modal = (props) => {
           );
         })}
 
-        {/* botón para cerrar el modal de la info */}
+        {/*botón para cerrar el modal de la info*/}
         <button onClick={() => props.setShow(props.show)}>cerrar</button>
       </div>
     </div>
