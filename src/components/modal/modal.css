@@ -1,7 +1,7 @@
 .modal-pokemon {
     background-color: white;
-    width: 35%;
-    height: 65vh;
+    width: auto;
+    height: auto;
     position: fixed;
     top: 10%; /*posiciona el modal desde arriba*/
     left: 55%; /*posiciona el modal desde el lado izquierdo*/
@@ -10,7 +10,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 5px 5px 8px #999;
 }
@@ -49,7 +49,24 @@
 }
 
 .type {
+    margin-top: 20px;
+}
+
+.type>h4 {
     text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.type-name {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.type-image {
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .c2>h4 {

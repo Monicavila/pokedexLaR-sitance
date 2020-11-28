@@ -37,17 +37,18 @@ const Modal = (props) => {
           <div className="type">
             {/*arreglo del tipo del pokemon*/}
             <h4>Type: </h4>
-            {pokemon.types.map((type) => {
+            <div className="type-name">
+              {pokemon.types.map((type) => {
               let icon = findIcon(type.type.name);
               return (
-                  <div className="type-name">
-                    <div className="type-name-img">
-                      <img className="icon" src={icon.url} alt={type.type.name} style={icon.size}/>
-                    </div>                    
+                  <div className="type-image">                    
+                    <img className="icon" src={icon.url} alt={type.type.name} style={icon.size}/>                                        
                     <p style={icon.backgroundColor}>{type.type.name}</p>
                   </div>
                 );
               })}
+            </div>
+            
           </div>
         </div> 
         <div className="poke-image">
