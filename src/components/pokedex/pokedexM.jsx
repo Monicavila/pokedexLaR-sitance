@@ -7,6 +7,7 @@ import "./styles.css";
 
 import display from "../../imgs/pokédexNAME.png";
 import red from "../../imgs/Red.png"
+import Arrows from "../pagination/arrows.jsx";
 
 export default class PokedexM extends React.Component {
   constructor() {
@@ -103,9 +104,14 @@ export default class PokedexM extends React.Component {
               );
             })}
           </div>
-          <div>
-            <br />
-            <Pagination currentPage={this.state.currentPage} fetchPageFn={this.fetchPage} />
+          <div className="positionPaginationM">
+            <Arrows fn={this.fetchPage} currentPage={this.state.currentPage}>
+              {" "}
+            </Arrows>
+            <Pagination
+              currentPage={this.state.currentPage}
+              fetchPageFn={this.fetchPage}
+            />
           </div>
         </div>
       </div>

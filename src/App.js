@@ -7,7 +7,7 @@ import swal from "sweetalert";
 import "./App.css";
 
 import PokedexF from "./components/pokedex/pokedexF.jsx";
-import PokedexM from "./components/pokedex/pokedexM";
+import PokedexM from "./components/pokedex/pokedexM.jsx";
 import Stadio from "./components/stadio/stadio";
 import Female from "./components/female";
 import Male from "./components/male";

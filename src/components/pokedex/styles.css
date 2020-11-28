@@ -21,6 +21,7 @@
   width: 650px;
   padding: 20px;
   margin-left: 950px;
+  margin-bottom: 45px;
 }
 .leaf {
   margin-top: -880px;
@@ -81,5 +82,9 @@
 
 .positionPagination {
   margin-top: -35%;
+  margin-left: 35%;
+}
+.positionPaginationM {
+  margin-top: -34%;
   margin-left: 35%;
 }
