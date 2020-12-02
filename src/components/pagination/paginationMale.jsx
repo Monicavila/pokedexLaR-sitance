@@ -31,7 +31,7 @@ export default function Pagintation(props){
                     props.currentPage!==element?classtype="buttomCard":classtype="selectedCard"
                    
                 return(
-                    <div className={classtype} onClick={() => props.fetchPageFn(element)}>
+                    <div className={classtype} onClick={() => props.fetchPageFn(element, index)}>
                     {element}
                 </div>
                     ) 

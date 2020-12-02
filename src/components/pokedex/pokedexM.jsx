@@ -1,6 +1,6 @@
 import React from "react";
 import CardM from "../cardMale";
-import Pagination from "../pagination/paginationMale";
+import Pagination from "../pagination/paginationMale.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./styles.css";
@@ -109,6 +109,7 @@ export default class PokedexM extends React.Component {
               {" "}
             </Arrows>
             <Pagination
+              key={this.index}
               currentPage={this.state.currentPage}
               fetchPageFn={this.fetchPage}
             />

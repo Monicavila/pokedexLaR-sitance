@@ -31,37 +31,45 @@ const ModalM = (props) => {
       <div className="c1">
         <div className="data">
           <div className="data-name">
-            <p># {pokemon.id}</p>{" "}
-            <p>{props.name}</p>{" "}
+            <p># {pokemon.id}</p> <p>{props.name}</p>{" "}
           </div>
           <div className="type">
             {/* arreglo del tipo del pokemon */}
             <h4>Type: </h4>
-            {pokemon.types.map((type) => {
-              let icon = findIcon(type.type.name);
-              return (
+            <div className="icons-columns">
+              {pokemon.types.map((type) => {
+                let icon = findIcon(type.type.name);
+                return (
                   <div className="type-name">
                     <div className="type-name-img">
-                      <img className="icon" src={icon.url} alt={type.type.name} style={icon.size}/>
-                    </div>                    
-                    <p style={icon.backgroundColor}>{type.type.name}</p>
+                      <img
+                        className="icon"
+                        src={icon.url}
+                        alt={type.type.name}
+                        style={icon.size}
+                      />
+                    </div>
+                    <div>
+                      <p style={icon.backgroundColor}>{type.type.name}</p>
+                    </div>
                   </div>
                 );
               })}
+            </div>
           </div>
-        </div> 
+        </div>
         <div className="poke-image">
           <img src={props.img} alt={props.name} />{" "}
-        </div>                
+        </div>
       </div>
-      
+
       <div className="c2">
         {/* arreglo de los stats del pokemon */}
         <h4>Stats: </h4>
         {pokemon.stats.map((stat) => {
           return (
             <div className="stats">
-              <label for="file">
+              <label htmlFor="file">
                 {stat.stat.name}: {stat.base_stat} %
               </label>
               <progress id="file" max="100" value={stat.base_stat}></progress>
@@ -70,7 +78,7 @@ const ModalM = (props) => {
         })}
 
         {/* botón para cerrar el modal de la info */}
-        <button onClick={() => props.setShow(props.show)}>cerrar</button>
+        <button onClick={() => props.setShow(props.show)}>Cerrar</button>
       </div>
     </div>
   );
