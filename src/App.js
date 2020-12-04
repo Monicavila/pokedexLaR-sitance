@@ -11,7 +11,7 @@ import PokedexM from "./components/pokedex/pokedexM.jsx";
 import Stadio from "./components/stadio/stadio";
 import Female from "./components/female";
 import Male from "./components/male";
-
+import Auth from "./components/auth/auth"
 export default class App extends React.Component {
   constructor() {
     super();
@@ -58,6 +58,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+        
         <div className="row-navbar">
           <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="#App">
