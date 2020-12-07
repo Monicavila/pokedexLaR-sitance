@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../card";
+import CardM from "../cardMale";
 import Pagination from "../pagination/paginationMale";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -95,7 +95,7 @@ export default class PokedexM extends React.Component {
               let pokemonImg = this.getImage(index);
               let pokemonNum = this.getNumber(index);
               return (
-                <Card
+                <CardM
                   key={index + 1}
                   id={pokemonNum}
                   name={pokemon.name}

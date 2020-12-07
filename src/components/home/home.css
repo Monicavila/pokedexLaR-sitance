@@ -1,0 +1,101 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+.home-Btn {
+    margin-left: 800px;
+    font-weight: bolder;
+  }
+  .start{
+    width: 100vw;
+  }
+  .name {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    margin-top: 60px;
+    margin-left: 40%;
+  }
+  .stadio-badge {
+    font-size: 1em;
+    padding-top: 10px;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .start img {
+    width: 100%;
+  }
+  .female{
+    position: absolute;
+    width: 400px;
+    margin: 75px 0px 0px 150px;
+  }
+  .female img:hover {
+    cursor: pointer;
+    filter: saturate(180%);
+  }
+  .male {
+    position: absolute;
+    width: 670px;
+    margin: 70px 0px 0px 450px;
+  }
+  .male img:hover {
+    cursor: pointer;
+    filter: saturate(180%);
+  }
+  .press-start {
+    position: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 270px 0 0 650px;
+  }
+  .press-start p {
+    text-decoration: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .start-txt {
+    color: rgb(244, 247, 239);
+    font-family: "Press Start 2P";
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #15ff11, 0 0 70px #15ff11, 0 0 80px#15ff11, 0 0 100px #15ff11, 0 0 150px #15ff11;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #15ff11, 0 0 35px #15ff11, 0 0 40px#15ff11, 0 0 50px #15ff11, 0 0 75px #15ff11;
+    }
+  }
+  
+  @-moz-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #15ff11, 0 0 70px#15ff11, 0 0 80px #15ff11, 0 0 100px #15ff11, 0 0 150px #15ff11;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #15ff11, 0 0 35px #15ff11, 0 0 40px #15ff11, 0 0 50px #15ff11, 0 0 75px #15ff11;
+    }
+  }
+  
+  @-webkit-keyframes neon1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #15ff11, 0 0 70px #15ff11, 0 0 80px #15ff11, 0 0 100px #15ff11, 0 0 150px #15ff11;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #15ff11, 0 0 35px #15ff11, 0 0 40px #15ff11, 0 0 50px #15ff11, 0 0 75px #15ff11;
+    }
+  }
+  
+  .footer {
+    margin: 0;
+    padding: 2em;
+    width: 100vw;
+    text-align: center;
+  }
+  
