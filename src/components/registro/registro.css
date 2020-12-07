@@ -1,0 +1,92 @@
+.reg {
+    width: 100vw;
+    height: 120vh;
+    background-image: url(../imagenLogin/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newReg {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    height: 85vh;
+    font: roboto;
+    padding: 25px;
+    position: relative;  
+    top: 8%;  
+}
+
+h3 {
+    color: #15BDC8;
+    margin-top: 6%;
+}
+
+h6 {
+    font-size: 12px;
+    color: #0C6312;
+}
+
+input {
+    width: 330px;
+    height: 40px;
+    border-radius: 15px;
+    border: solid 1px #8C8282;
+}
+
+.userReg {
+    background: linear-gradient(to left,#2DF88A,#24D6E1);
+    width: 330px;
+    height: 40px;
+    color: #0C6312;
+    border-radius: 15px;
+    border: none;
+}
+
+.social {
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+.google {
+    background-image: url(../imagenLogin/googleICon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.facebook {
+    background-image: url(../imagenLogin/facebookIcon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.pikachu  {
+    background-image: url(../imagenLogin/pokachu3D.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15%;
+    height: 35%;
+    position: absolute;
+    top: 15%;
+}
+
+.pikachu>img {
+    width: 15%;
+    height: 30%;
+}

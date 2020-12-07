@@ -1,0 +1,29 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+.navMenu {
+    display: inline-flex;
+    flex-direction: row;
+}
+.row-navbar {
+width: 100vw;
+}
+.row-navbar img {
+margin-left: 3em;
+}
+.row-navbar p {
+display: inline-block;
+font-size: 1.5em;
+font-weight: bold;
+padding-left: 1em;
+}
+.home-Btn {
+margin-left: 50px;
+font-weight: bolder;
+}
+
+ul>li {
+    display: inline-flex;
+    flex-direction: row;
+}
