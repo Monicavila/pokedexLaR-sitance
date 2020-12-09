@@ -1,0 +1,12 @@
+.profile {
+    width: auto;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: column;
+    flex-direction: block;
+    text-align: left;
+    justify-content: left;
+    position: absolute;
+}

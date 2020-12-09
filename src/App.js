@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Auth from "./components/auth/auth";
 import Home from "./components/home/home";
 import ProtectedComponent from "./components/protectedComponent/protectedComponent";
-import Profile from "./components/profile/profile";
 import NavMenu from "./components/navMenu/navMenu";
 import Registro from "./components/registro/registro";
 
@@ -16,7 +15,7 @@ export default function App() {
     <div>
       <div className="row-navbar">
         <Router>
-          <NavMenu />
+          <NavMenu user={user} setUserFn={setUser}/>
           <Switch>
             <Route path="/" exact>
               <Auth setUserFn={setUser} />
@@ -24,11 +23,15 @@ export default function App() {
             <Route path="/registro" exact>
               <Registro />
             </Route>
+            {/* <Route path="/home">
+              <Home />
+            </Route> */}
             <ProtectedComponent path="/home" user={user} exact>
               <Home />
             </ProtectedComponent>
+            {/* <Route path="/perfil" user={user} /> */}
             <ProtectedComponent path="/perfil" user={user} exact>
-              <Profile />
+              <Home /> 
             </ProtectedComponent>
             <Route path="*">
               <h2>404 Not Found</h2>
