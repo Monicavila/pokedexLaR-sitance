@@ -1,6 +1,6 @@
 .modal-pokemon {
     background-color:  whitesmoke;
-    width: 125%;
+    width: 130%;
     height: auto;
     position: absolute;
     top: 25%; /*posiciona el modal desde arriba*/
@@ -24,7 +24,7 @@
 
 .modal-pokemonM {
     background-color: whitesmoke;
-    width: 125%;
+    width: 130%;
     height: auto;
     position: absolute;
     top: 20%; /*posiciona el modal desde arriba*/

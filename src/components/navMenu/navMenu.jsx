@@ -5,18 +5,23 @@ import { Navbar, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Pokeball from "../imagenLogin/pokeball.png";
+import Profile from "../profile/profile";
+import {withRouter} from "react-router-dom";
 
-export default class NavMenu extends React.Component {
-    constructor() {
-      super();
+class NavMenu extends React.Component {
+    constructor(props) {
+      super(props);
       this.state = {
         Female: true,
         Male: true,
         Home: true,
+        verified: false,
         name: "",
       };
+      
     }
 
+    
     home = () => {
         this.setState({ Female: true });
         this.setState({ Male: true });
@@ -27,8 +32,14 @@ export default class NavMenu extends React.Component {
         this.setState({ name: "" });
     };
 
+    openClose = () => {
+        this.props.history.push('/registro')
+        return this.setState({verified: !this.state.verified})
+    }
+
     render() {
-        return(
+        
+        return(            
             <Navbar bg="dark" variant="dark" >
                 <Navbar.Brand href="#App" className="navMenu">
                     <img
@@ -63,9 +74,10 @@ export default class NavMenu extends React.Component {
                         </li>
                         <li>
                             <Link to="/perfil">
-                                <Button className="home-Btn" variant="light" >
+                                <Button className="home-Btn" variant="light" onClick={() => {this.openClose()}}>
                                     PERFIL
-                                </Button>
+                                </Button>        
+                                {this.state.verified ? <Profile /> : null}                      
                             </Link>
                         </li>
                     </ul>                    
@@ -74,3 +86,5 @@ export default class NavMenu extends React.Component {
         );
     }    
 }
+
+export default withRouter(NavMenu);
