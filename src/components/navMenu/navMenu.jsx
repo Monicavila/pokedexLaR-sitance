@@ -30,7 +30,7 @@ class NavMenu extends React.Component {
     };
 
     loadHome = () => {
-        this.render(<Home/>)
+        <Home/>
     }
 
     deleteInput = () => {
