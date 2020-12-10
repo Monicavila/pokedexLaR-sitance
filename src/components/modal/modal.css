@@ -1,0 +1,110 @@
+.modal-pokemon {
+    background-color:  whitesmoke;
+    width: 130%;
+    height: auto;
+    position: absolute;
+    top: 25%; /*posiciona el modal desde arriba*/
+    left: 167%; /*posiciona el modal desde el lado izquierdo*/
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px #dadad7;
+}
+
+.modal-pokemon>.c1 {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.modal-pokemonM {
+    background-color: whitesmoke;
+    width: 130%;
+    height: auto;
+    position: absolute;
+    top: 20%; /*posiciona el modal desde arriba*/
+    right: 141%; /*posiciona el modal desde el lado izquierdo*/
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px #dadad7;
+}
+
+.modal-pokemonM>.c1 {
+    display: inline-flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.data {
+    margin-right: 60px;
+}
+
+.data>.data-name>p {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.data-name {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.poke-image {
+    background-color: #DADAD7;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px #999;
+}
+
+.poke-image>img {
+    width: 180px;
+    height: 190px;
+}
+
+.type {
+    text-align: center;
+    
+}
+.type-name {
+    padding: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+.icons-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.c2>h4 {
+    text-align: center;
+}
+
+.c2>button {
+    margin-left: 35%;
+    margin-top: 20px;
+    background-color: #24D6E1;
+    color:white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #999;
+}
+
+.stats>label {
+    font-weight: bold;
+    margin-right: 10px;
+}

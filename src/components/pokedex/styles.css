@@ -1,0 +1,92 @@
+.pokedex-bg {
+  width: 100vw;
+  background-image: url(../../imgs/sea.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.pokedex-bgM {
+  width: 100vw;
+  background-image: url(../../imgs/woods.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.pokedex-display {
+  width: 650px;
+  padding: 20px;
+  margin-left: 120px;
+}
+.pokedexM-display {
+  width: 650px;
+  padding: 20px;
+  margin-left: 950px;
+  margin-bottom: 45px;
+}
+.leaf {
+  margin-top: -880px;
+  margin-left: 900px;
+}
+.red {
+  position: absolute;
+  margin-left: 50px;
+}
+.pokedex-name {
+  position: absolute;
+  color: rgb(244, 247, 239);
+  font-family: "Press Start 2P";
+  font-weight: lighter;
+  font-size: larger;
+  margin-top: -810px;
+  margin-left: 290px;
+}
+.pokedex-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-left: 85px;
+  margin-top: -752px
+}
+.card-container {
+  width: 140px;
+  padding: 0.5em 1em 1em 1em;
+  border-radius: 10px;
+  text-align: left;
+  background-color: whitesmoke;
+}
+.card-container:hover {
+  cursor: pointer;
+  background-color: rgb(183, 243, 248);
+}
+
+.card-container p {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12.7px;
+  margin: 0;
+}
+
+.card-container > img {
+  display: block;
+  width: 100%;
+  background-color: #dadad7;
+  border-radius: 10px;
+}
+
+.card-container > img:hover {
+  background-color: rgba(183, 243, 248, 0.854);
+  filter: saturate(250%);
+}
+
+.positionPagination {
+  margin-top: -35%;
+  margin-left: 35%;
+}
+.positionPaginationM {
+  margin-top: -34%;
+  margin-left: 35%;
+}

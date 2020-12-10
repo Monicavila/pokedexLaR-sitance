@@ -1,0 +1,151 @@
+.auth {
+    height: 100vh;
+    background-image: url(../imagenLogin/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newAuth {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(139, 137, 137);
+    /*display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-itmes: center;*/
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    height: 60%;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    position: relative;  
+    top: 10%;  
+}
+
+.newAuth > h3 {
+    color: #15BDC8;
+    margin-top: 18%;
+    font-weight: bold;
+}
+
+.newAuth > h6 {
+    margin: 5%;
+    font-size: 12px;
+    color: #0C6312;
+    cursor: pointer;
+}
+
+.newAuth > h4 {
+    margin: 5%;
+    font-size: 16px;
+    color: #0C6312;
+    cursor: pointer;
+}
+
+.newAuth > input {
+    margin: 5%;
+    padding-left: 5%;
+    width: 330px;
+    height: 40px;
+    border-radius: 15px;
+    border: solid 1px #8C8282;
+}
+.newAuthIn {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px rgb(139, 137, 137);
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    height: 65%;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    position: relative;  
+    top: 11%;  
+}
+.newAuthIn > h3 {
+    color: #15BDC8;
+    margin-top: 18%;
+    font-weight: bold;
+}
+
+.newAuthIn > h6 {
+    margin: 5%;
+    font-size: 12px;
+    color: #0C6312;
+    cursor: pointer;
+}
+
+.newAuthIn > h4 {
+    margin: 5%;
+    font-size: 16px;
+    color: #0C6312;
+    cursor: pointer;
+}
+
+.newAuthIn > input {
+    margin: 5%;
+    padding-left: 5%;
+    width: 330px;
+    height: 40px;
+    border-radius: 15px;
+    border: solid 1px #8C8282;
+}
+.open {
+    margin: 5%;
+    background: linear-gradient(to left,#2DF88A,#24D6E1);
+    width: 330px;
+    height: 40px;
+    color: #0C6312;
+    border-radius: 15px;
+    border: none;
+}
+
+.social {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 5%;
+
+}
+
+.google {
+    background-image: url(../imagenLogin/googleICon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.facebook {
+    background-image: url(../imagenLogin/facebookIcon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.pikachu  {
+    background-image: url(../imagenLogin/pokachu3D.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15%;
+    height: 35%;
+    margin-top: -6.5%;
+    position: absolute;
+}
+
+.pikachuIn {
+    background-image: url(../imagenLogin/pokachu3D.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15%;
+    height: 35%;
+    margin-top: -35%;
+    position: absolute;
+}

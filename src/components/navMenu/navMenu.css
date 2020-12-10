@@ -1,0 +1,30 @@
+#root {
+    display: flex;
+    justify-content: center;
+}
+.navMenu {
+    display: inline-flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+}
+.row-navbar {
+width: 100vw;
+}
+.row-navbar img {
+margin-left: 3em;
+}
+.row-navbar p {
+display: inline-block;
+font-size: 1.5em;
+font-weight: bold;
+padding-left: 1em;
+}
+
+ul>li {
+    display: inline-flex;
+    flex-direction: row;
+}
+.user-Img {
+    width: 15%;
+}
