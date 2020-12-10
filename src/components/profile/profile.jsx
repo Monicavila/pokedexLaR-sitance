@@ -1,6 +1,6 @@
 import React from "react";
 import "./profile.css";
-import firebase, { auth } from "../firebase/config";
+import firebase from "../firebase/config";
 import imgUser from "../imagenLogin/profile.png"
 
 class Profile extends React.Component {
