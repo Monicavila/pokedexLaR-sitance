@@ -9,7 +9,7 @@ import ProtectedComponent from "./components/protectedComponent/protectedCompone
 import NavMenu from "./components/navMenu/navMenu";
 import Registro from "./components/registro/registro";
 import firebase, { auth } from "./components/firebase/config";
-import { Button } from "react-bootstrap";
+import swal from "sweetalert";
 
 export default function App() {
   const history = useHistory();
@@ -19,10 +19,11 @@ export default function App() {
   let [email, setEmail] = useState("");
   let [pass, setPass] = useState("");
   let [name, setName] = useState("");
-  let [login, setLogin] = useState(true);
+  let [login, setLogin] = useState(false);
 
   const handleChange = (event) => {
     // console.log("entrando a handle "+event.target.name)
+    // eslint-disable-next-line
     switch (event.target.name) {
       case "name":
         setName(event.target.value);
@@ -46,7 +47,10 @@ export default function App() {
         setUser(user);
         history.push("/home");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error)
+        swal("Sorry!", "The email address or password are incorrect!", "warning");
+      });
   };
   const signUpEmail = (event) => {
     event.preventDefault();
@@ -64,14 +68,17 @@ export default function App() {
             // let user = response.user;
             // setUser(user);
             setLogin(true);
-            alert("Ya estás registrado");
+            swal("Congratulations!", "You are registered!", "warning");
             history.push("/");
           });
         // function(error) {
         //    // An error happened.
         // });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error)
+        swal("Sorry!", "The email address is already in use by another account!", "warning");
+      });
   };
   const signInGoogle = () => {
     auth

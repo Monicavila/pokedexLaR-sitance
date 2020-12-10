@@ -1,15 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import "./auth.css";
 
 function Auth(props){
     let [signIn,setSignIn]=useState(true);
-    useEffect(()=>{
-        setSignIn(props.redirectLogIn)
-    },[])
  
     return(
         <div className="auth">
-            {signIn?(<>
+            {signIn || props.redirectLogIn ?(<>
                     <div className="newAuth">
                         <h3>¡BIENVENIDO ENTRENADOR!</h3>
                         <input name="email" placeholder="Correo" onChange={props.handleChange} type="email"></input>
