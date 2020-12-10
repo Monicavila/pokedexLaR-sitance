@@ -7,7 +7,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import Pokeball from "../imagenLogin/pokeball.png";
 import Profile from "../profile/profile";
 import imgUser from "../imagenLogin/profile.png"
-import Home from "../home/home.jsx"
 
 class NavMenu extends React.Component {
     constructor(props) {
@@ -28,10 +27,6 @@ class NavMenu extends React.Component {
         this.setState({ Male: true });
         this.setState({ Home: true });
     };
-
-    loadHome = () => {
-        <Home/>
-    }
 
     deleteInput = () => {
         this.setState({ name: "" });
@@ -59,7 +54,6 @@ class NavMenu extends React.Component {
                         width="45"
                         height="45"
                         className="d-inline-block align-top"
-                        onClick={this.loadHome()}
                     />{" "}
                     <p>WELCOME TO YOUR POKÉMON POKEDEX</p>
                     <ul>
