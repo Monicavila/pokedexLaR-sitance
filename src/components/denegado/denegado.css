@@ -1,0 +1,46 @@
+.denied {
+    width: 100vw;
+    height: 48vw;
+    background-image: url(../imagenLogin/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherD {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 8px black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 42%;
+    height: 65%;
+    padding: 25px;
+}
+
+.otherD>h3 {
+    color: #15BDC8;
+}
+
+.otherD>button {
+    background: linear-gradient(to left,#2DF88A,#24D6E1);
+    width: 343px;
+    height: 50px;
+    color: #0C6312;
+    border-radius: 20px;
+    border: none;
+}
+
+.otherD>h6 {
+    color: #0C6312;
+    cursor: pointer;
+}
+
+.otherD>img {
+    margin-left: -15%;
+}

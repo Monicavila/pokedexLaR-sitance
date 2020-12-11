@@ -1,0 +1,16 @@
+.profile {
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 15px;
+    display: column;
+    flex-direction: block;
+    text-align: left;
+    justify-content: left;
+    position: absolute;
+}
+.profile > h6 {
+    color: yellow;
+}
