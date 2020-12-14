@@ -2,18 +2,13 @@ import React, { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-<<<<<<< HEAD
 import { Switch, Route, useHistory } from "react-router-dom";
-=======
-import { BrowserRouter, Switch, Route, useHistory } from "react-router-dom";
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
 import Auth from "./components/auth/auth";
 import Home from "./components/home/home";
 import ProtectedComponent from "./components/protectedComponent/protectedComponent";
 import NavMenu from "./components/navMenu/navMenu";
 import firebase, { auth } from "./components/firebase/config";
 import swal from "sweetalert";
-<<<<<<< HEAD
 
 export default function App() {
   const history = useHistory();
@@ -29,18 +24,6 @@ export default function App() {
   const changeState = (value) => {
     setRegister(value);
   };
-=======
-
-export default function App() {
-  const history = useHistory();
-  const [user, setUser] = useState(false);
-  let googleProvider = new firebase.auth.GoogleAuthProvider();
-  let facebookProvider = new firebase.auth.FacebookAuthProvider();
-  let [email, setEmail] = useState("");
-  let [pass, setPass] = useState("");
-  let [name, setName] = useState("");
-  let [login, setLogin] = useState(false);
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
 
   const handleChange = (event) => {
     // console.log("entrando a handle "+event.target.name)
@@ -69,17 +52,12 @@ export default function App() {
         history.push("/home");
       })
       .catch((error) => {
-<<<<<<< HEAD
         console.log(error);
         swal(
           "Sorry!",
           "The email address or password are incorrect!",
           "warning"
         );
-=======
-        console.log(error)
-        swal("Sorry!", "The email address or password are incorrect!", "warning");
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
       });
   };
   const signUpEmail = (event) => {
@@ -98,11 +76,7 @@ export default function App() {
             // let user = response.user;
             // setUser(user);
             setLogin(true);
-<<<<<<< HEAD
             swal("Congratulations!", "You are registered!", "success");
-=======
-            swal("Congratulations!", "You are registered!", "warning");
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
             history.push("/");
           });
         // function(error) {
@@ -110,17 +84,12 @@ export default function App() {
         // });
       })
       .catch((error) => {
-<<<<<<< HEAD
         console.log(error);
         swal(
           "Sorry!",
           "The email address is already in use by another account!",
           "warning"
         );
-=======
-        console.log(error)
-        swal("Sorry!", "The email address is already in use by another account!", "warning");
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
       });
   };
   const signInGoogle = () => {
@@ -155,7 +124,6 @@ export default function App() {
   return (
     <div>
       <div className="row-navbar">
-<<<<<<< HEAD
         <Switch>
           <Route path="/" exact>
             <Auth
@@ -196,40 +164,11 @@ export default function App() {
             user={{ name: "" }}
             login={changeState}
           >
-=======
-        <BrowserRouter>
-          <Switch>
-            <Route path="/" exact>
-              <Auth
-                redirectLogIn={login}
-                setUserFn={setUser}
-                signInFacebook={signInFacebook}
-                signInGoogle={signInGoogle}
-                signUpEmail={signUpEmail}
-                signInEmail={signInEmail}
-                handleChange={handleChange}
-              />
-            </Route>
-            {/* <Route path="/home">
-                <Home />
-              </Route> */}
-            <ProtectedComponent path="/home" exact>
-              <NavMenu user={user} setUserFn={setUser} history={history} />
-              <Home user={user} />
-            </ProtectedComponent>
-            {/* <Route path="/perfil" user={user} /> */}
-            <ProtectedComponent path="/perfil" user={user} exact>
-              <NavMenu user={user} setUserFn={setUser} history={history} />
-              <Home />
-            </ProtectedComponent>
-            <ProtectedComponent path="/pokedex/:gender" user={{name: ""}} exact>
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
             <>
               <NavMenu user={user} setUserFn={setUser} history={history} />
               <Home user={user} />
             </>
           </ProtectedComponent>
-<<<<<<< HEAD
           <Route exact path="*">
             <h2>404 Not Found</h2>
           </Route>
@@ -238,14 +177,3 @@ export default function App() {
     </div>
   );
 }
-=======
-            <Route path="*">
-              <h2>404 Not Found</h2>
-            </Route>
-          </Switch>
-        </BrowserRouter>
-      </div>
-    </div>
-  );
-}
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a

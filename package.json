@@ -13,10 +13,7 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
-<<<<<<< HEAD
     "react-onclickoutside": "^6.9.0",
-=======
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "sweetalert": "^2.1.2",
