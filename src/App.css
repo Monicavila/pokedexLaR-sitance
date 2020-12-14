@@ -125,7 +125,6 @@
 }
 
 @media (max-width: 1440px) and (min-width: 1366px) {
-<<<<<<< HEAD
   .img-profile {
     margin-left: 550px;
   }
@@ -148,16 +147,4 @@
     width: 340px;
     margin: 70px 0px 0px 400px;
   }
-
 }
-=======
-  .female {
-    width: 300px;
-    /*margin: 75px 0px 0px 150px;*/
-  }
-  .male {
-    width: 470px;
-    /*margin: 70px 0px 0px 450px;*/
-  }
- }
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
