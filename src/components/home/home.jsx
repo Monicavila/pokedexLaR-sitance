@@ -1,5 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
+=======
+import { Jumbotron } from "react-bootstrap";
+>>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import swal from "sweetalert";
 import {withRouter} from "react-router-dom";
@@ -71,10 +75,17 @@ class Home extends React.Component {
           {!gender ? (
             <Stadio name={this.handleInput} trainer={this.state.name} />
           ) : null}
+<<<<<<< HEAD
           <div className="footer" bg="dark" variant="dark">
             Nov 2020 <a href="https://monicavila.netlify.app/">Godzimona</a>{" "}
             Co-op La Résistance. Visit my portfolio if you like.
           </div>
+=======
+          <Jumbotron className="footer" bg="dark" variant="dark">
+            Nov 2020 <a href="https://monicavila.netlify.app/">Godzimona</a>{" "}
+            Co-op La Résistance. Visit my portfolio if you like.
+          </Jumbotron>
+>>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
         </div>
       </div>
     );

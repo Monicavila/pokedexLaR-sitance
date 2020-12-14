@@ -29,8 +29,13 @@ class Profile extends React.Component {
         <img
           src={this.props.user.photoURL ? this.props.user.photoURL : imgUser}
           alt="imagen perfil"
+<<<<<<< HEAD
           width="60px"
           height="60px"
+=======
+          width="20px"
+          height="20px"
+>>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
         />
         <h5>{this.props.user.displayName}</h5>
         <h6 onClick={() => this.signOut()}>Cerrar sesión</h6>
