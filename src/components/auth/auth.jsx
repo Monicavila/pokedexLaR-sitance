@@ -6,11 +6,7 @@ function Auth(props){
  
     return(
         <div className="auth">
-<<<<<<< HEAD
             {(signIn || props.redirectLogIn) && !props.register ?(<>
-=======
-            {signIn || props.redirectLogIn ?(<>
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
                     <div className="newAuth">
                         <h3>¡BIENVENIDO ENTRENADOR!</h3>
                         <input name="email" placeholder="Correo" onChange={props.handleChange} type="email"></input>
@@ -21,11 +17,7 @@ function Auth(props){
                             <button className="facebook" onClick={props.signInFacebook}></button>
                             <button className="google" onClick={props.signInGoogle}></button>                   
                         </div>
-<<<<<<< HEAD
                         <h4 onClick={() => setSignIn(false)}>¿No tienes cuenta?</h4>
-=======
-                        <h4 onClick={() => setSignIn(false) }>¿No tienes cuenta?</h4>
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
                     </div>
                     <div className="pikachu"></div>
                     </> 
@@ -42,11 +34,7 @@ function Auth(props){
                             <button className="facebook" onClick={props.signInFacebook}></button>
                             <button className="google" onClick={props.signInGoogle}></button>                   
                         </div>
-<<<<<<< HEAD
                         <h4 onClick={()=>{setSignIn(true); props.changeRegister(false)}}>Ya tengo cuenta</h4>             
-=======
-                        <h4 onClick={() => setSignIn(true)}>Ya tengo cuenta</h4>             
->>>>>>> 9a4a7f530f3de5ce20bc7ba0f3c026e53939705a
                         </div>
                         <div className="pikachuIn"></div>
                         </>)
