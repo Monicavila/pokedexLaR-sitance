@@ -82,7 +82,7 @@ const Modal = (props) => {
         })}
 
         {/* botón para cerrar el modal de la info */}
-        <button onClick={() => props.setShow(props.show)}>cerrar</button>
+        <button onClick={() => props.setShow(props.show)}>Cerrar</button>
       </div>
     </div>
   );

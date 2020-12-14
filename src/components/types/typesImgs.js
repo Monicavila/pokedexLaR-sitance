@@ -93,7 +93,7 @@ const typesImg = [
     {
         url: ice,
         name: "ice",
-        backgroundColor:{backgroundColor: "rgb(123, 222, 222)", color: "#fff", textAlign: "center", borderRadius: "15px", padding: "2.5px"},
+        backgroundColor:{backgroundColor: "rgb(123, 222, 222)", color: "#000", textAlign: "center", borderRadius: "15px", padding: "2.5px"},
         size: {width: "60px", height: "60px"}  
     },
     {

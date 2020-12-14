@@ -80,7 +80,7 @@ export default class PokedexF extends React.Component {
     }
     return number;
   };
-
+  
   render() {
     return (
       <div className="pokedex-bg">
@@ -88,7 +88,7 @@ export default class PokedexF extends React.Component {
           <img src={display} alt="display"></img>
           <h4 className="pokedex-name">{this.props.trainer}</h4>
           <div className="pokedex-container">
-            {this.state.pokemones.map((pokemon, index) => {
+            {((index)=> this.getNumber(index)<=450) ? (this.state.pokemones.map((pokemon, index) => {
               // 2. Solucionar el problema de obtener las imagenes de los pokemones con id <
               // 10, > 10, > 100
               let pokemonImg = this.getImage(index);
@@ -101,7 +101,7 @@ export default class PokedexF extends React.Component {
                   img={pokemonImg}
                 />
               );
-            })}
+            })):null}
           </div>
           <div className="positionPagination">
             <Arrows fn={this.fetchPage} currentPage={this.state.currentPage}>

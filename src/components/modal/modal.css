@@ -1,10 +1,10 @@
 .modal-pokemon {
     background-color:  whitesmoke;
-    width: 125%;
+    width: 131%;
     height: auto;
     position: absolute;
     top: 25%; /*posiciona el modal desde arriba*/
-    left: 167%; /*posiciona el modal desde el lado izquierdo*/
+    left: 164%; /*posiciona el modal desde el lado izquierdo*/
     color: black;
     display: flex;
     flex-direction: column;
@@ -24,11 +24,11 @@
 
 .modal-pokemonM {
     background-color: whitesmoke;
-    width: 125%;
+    width: 131%;
     height: auto;
     position: absolute;
     top: 20%; /*posiciona el modal desde arriba*/
-    right: 141%; /*posiciona el modal desde el lado izquierdo*/
+    right: 138%; /*posiciona el modal desde el lado izquierdo*/
     color: black;
     display: flex;
     flex-direction: column;

@@ -11,20 +11,22 @@ export default class Stadio extends React.Component {
         <div className="start">
           <div className="press-start">
             <p className="start-txt">
-              <span>CHOOSE A TRAINER</span>
+              <span>CHOOSE</span>
+              <span>A</span>
+              <span>TRAINER</span>
             </p>
           </div>
           <div className="name">
             <InputGroup className="mb-3">
-              <InputGroup.Append>
-                <Badge className="stadio-badge" variant="success">
+              <InputGroup.Append className="stadio-badge">
+                <Badge className="badgeG" variant="success">
                   Name
                 </Badge>{" "}
               </InputGroup.Append>
               <FormControl
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
-                placeholder="Enter the trainer name"
+                placeholder="Enter trainer's name"
                 onChange={this.props.name}
                 value={this.props.trainer}
               />

@@ -1,0 +1,33 @@
+.profile {
+  margin: 13% 0 0 76%;
+  width: auto;
+  height: auto;
+  background-color: whitesmoke;
+  color: black;
+  padding: 20px;
+  border-radius: 5px;
+  display: column;
+  flex-direction: block;
+  text-align: left;
+  justify-content: left;
+  position: absolute;
+}
+
+.profile > h6 {
+  color: green;
+  cursor: pointer;
+}
+
+@media (max-width: 1440px) and (min-width: 1366px) {
+  .profile {
+    margin: 16% 0 0 73%;
+    width: 15%;
+  }
+  .profile > h6 {
+      margin: 0;
+  }
+  .profile > h5 {
+      font-size: 1em;
+      margin-top: 15px;
+  }
+}

@@ -1,0 +1,70 @@
+.denied {
+  height: 100vh;
+  background-image: url(../imagenLogin/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherD {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px rgb(139, 137, 137);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+  height: 45%;
+  padding: 25px;
+}
+
+.otherD > h3 {
+  color: #15bdc8;
+  font-weight: bold;
+}
+
+.otherD > button {
+  background: linear-gradient(to left, #2df88a, #24d6e1);
+  width: 343px;
+  height: 50px;
+  color: #0c6312;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+}
+
+.otherD > h6 {
+  color: #0c6312;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.otherD > img {
+  width: 200px;
+  height: 180px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1440px) and (min-width: 1366px) {
+  .otherD > img {
+    width: 150px;
+    height: 130px;
+  }
+  .otherD > h3 {
+    font-size: 1.5em;
+  }
+  .otherD > button {
+    width: 243px;
+    height: 35px;
+    font-size: 0.85em;
+  }
+  .otherD > h6 {
+    font-size: 0.8em;
+  }
+}
